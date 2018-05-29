@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var httpServer = http.createServer(app);
 
-app.post('/', function (req, res) {
+app.post('/scrape', function (req, res) {
     
 	console.log('inside the main method!');
 
