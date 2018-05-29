@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Web scrapper for body parts",
+  "main": "",
+  "scripts": {
+    "toc": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravscorpsgit/autelscraper/package.json.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "markdown-toc": ""
+  }
+}
