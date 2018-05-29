@@ -112,4 +112,4 @@ res.json(JSON.parse('{"list":'+strjson+',"assembly_image":"'+asimg+'","total_ite
 });
 });
 console.log("Server about to start")
-httpServer.listen(3000);
+httpServer.listen(80);
