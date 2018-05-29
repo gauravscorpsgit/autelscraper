@@ -8,6 +8,7 @@ var httpServer = http.createServer(app);
 
 app.post('/', function (req, res) {
     
+	console.log('inside the main method!');
 
 
 var urlObj = url.parse(req.url, true);
