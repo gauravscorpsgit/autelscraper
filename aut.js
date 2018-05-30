@@ -78,7 +78,7 @@ var tobject = new ob(ind[i], cat[i], img[i],itemId);
 arrayList.push(tobject);
 var temp=JSON.stringify(tobject);
 //var send='{"ind":"'+ind[i]+'"}'
-
+console.log(hookUrl);
 request(hookUrl,{
 		method:'POST',
 		body: temp,
