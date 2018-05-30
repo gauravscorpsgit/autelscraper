@@ -16,6 +16,8 @@ var urlObj = url.parse(req.url, true);
 	var hookUrl = urlObj['query']['posturl'];
 	var itemId  = urlObj['query']['itemid'];
 	
+	console.log(hookUrl);
+	
 	request(siteUrl, function(err, resp, html) {
         if (!err){
          const $ = cheerio.load(html);
@@ -78,7 +80,7 @@ var tobject = new ob(ind[i], cat[i], img[i],itemId);
 arrayList.push(tobject);
 var temp=JSON.stringify(tobject);
 //var send='{"ind":"'+ind[i]+'"}'
-console.log(hookUrl);
+
 request(hookUrl,{
 		method:'POST',
 		body: temp,
