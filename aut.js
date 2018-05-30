@@ -16,7 +16,7 @@ var urlObj = url.parse(req.url, true);
 	var hookUrl = urlObj['query']['posturl'];
 	var itemId  = urlObj['query']['itemid'];
 	
-	console.log(hookUrl);
+	console.log('hookurl='+hookUrl);
 	
 	request(siteUrl, function(err, resp, html) {
         if (!err){
