@@ -15,7 +15,7 @@ var urlObj = url.parse(req.url, true);
 	var siteUrl = urlObj['query']['siteurl'];
 	//var hookUrl = urlObj['query']['posturl'];
 	var hookUrl = "https://secure.globiflow.com/catch/9m3ko8si1zspl4w";
-	var itemId  = urlObj['query']['itemid'];
+	var itemId  = urlObj['query']['amp;itemid'];
 	
 	console.log('hookurl='+hookUrl);
 	console.log('siteurl='+siteUrl);
