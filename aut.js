@@ -13,8 +13,7 @@ app.post('/scrape', function (req, res) {
 
 var urlObj = url.parse(req.url, true);
 	var siteUrl = urlObj['query']['siteurl'];
-	//var hookUrl = urlObj['query']['posturl'];
-	var hookUrl = "https://secure.globiflow.com/catch/9m3ko8si1zspl4w";
+	var hookUrl = urlObj['query']['amp;posturl'];
 	var itemId  = urlObj['query']['amp;itemid'];
 	
 	console.log('hookurl='+hookUrl);
