@@ -16,14 +16,14 @@ var urlObj = url.parse(req.url, true);
 	var hookUrl = urlObj['query']['amp;posturl'];
 	var itemId  = urlObj['query']['amp;itemid'];
 	
-	console.log('hookurl='+hookUrl);
+	/*console.log('hookurl='+hookUrl);
 	console.log('siteurl='+siteUrl);
 	console.log('itemId='+itemId);
 	console.log('data='+req.data);
 	console.log('body='+req.body);
 	console.log('url='+req.url);
 	console.log('urlobj='+urlObj);
-	
+	*/
 	
 	
 	request(siteUrl, function(err, resp, html) {
