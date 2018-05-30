@@ -19,7 +19,7 @@ var urlObj = url.parse(req.url, true);
 	
 	console.log('hookurl='+hookUrl);
 	console.log('siteurll='+siteUrl);
-	
+	console.log('itemId'+itemId);
 	
 	request(siteUrl, function(err, resp, html) {
         if (!err){
