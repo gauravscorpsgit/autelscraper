@@ -20,6 +20,9 @@ var urlObj = url.parse(req.url, true);
 	console.log('hookurl='+hookUrl);
 	console.log('siteurl='+siteUrl);
 	console.log('itemId='+itemId);
+	console.log('data='+req.data);
+	console.log('data='+req.body);
+	
 	
 	request(siteUrl, function(err, resp, html) {
         if (!err){
